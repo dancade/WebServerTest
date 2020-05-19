@@ -34,7 +34,7 @@ func ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(jsonResp)
 }
-# this is a comment
+# this is a comment again
 func main() {
 	http.HandleFunc("/", ServeHTTP)
 	http.ListenAndServe(":9090", nil)
